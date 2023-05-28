@@ -1,0 +1,16 @@
+Scenario: Conveyor Belt Sorting System
+
+Imagine you have a conveyor belt system that is used to sort objects into two categories: light objects and heavy objects. There is a weight sensor that can detect whether an object is light or heavy. Your task is to program the system such that:
+
+The conveyor belt should start running when the start button is pressed.
+When the stop button is pressed, the conveyor belt should stop.
+When a light object is detected, it should be sorted into bin A, and when a heavy object is detected, it should be sorted into bin B.
+Here are some more specifications:
+
+A weight sensor detects the weight of an object and sends a signal that can be read by the PLC. The signal is '1' if the object is heavy and '0' if the object is light.
+
+There is a 'sorter' (maybe a mechanical arm or flap) controlled by the PLC, which sorts objects into bin A or B.
+
+To start with, you will need to create a start-stop latch for the conveyor belt motor. Then, based on the output from the weight sensor, you'll have to program the sorter to direct the objects into the correct bins.
+
+This scenario will allow you to practice basic ladder logic including start-stop latching, and making outputs act based on conditions. Once you are comfortable with this, you can add more complexity, like having multiple sensors or different types of objects to sort.
